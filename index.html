@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloco de Notas</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1 id="boas-vindas">Seja bem vindo!</h1>
+    </div>
+
+    <div class="naor">
+
+        <div class="Nota">
+            <h2>Notas</h2>
+        </div>
+
+        <div class="campo-pesquisa">
+            <input type="search" id="pesquisa-nota" placeholder="Pesquise uma nota 🔍" oninput="filtrarNotas()">
+            <button class="botao-limpar" onclick="limparPesquisa()">❌</button>
+        </div>
+
+        <div class="titulo-nova-nota">
+            <label for="nota-nome">Título da Nota:</label>
+            <input type="text" id="nota-nome" placeholder="Digite o título da nota">
+        </div>
+
+        <div>
+            <textarea name="addnota" id="notad" placeholder="Escreva sua Nota"></textarea>
+            <button class="adiciona" onclick="addnotas()">Adicionar</button>
+        </div>
+
+        <div>
+            <h2>Minhas notas</h2>
+            <ul id="notas">
+                <!-- Notas aparecem aqui -->
+            </ul>
+            <button class="apagar-tudo" onclick="apagarTodasNotas()">🗑️ Apagar todas as notas</button>
+        </div>
+
+    </div>
+
+    <!-- Ligando o arquivo JavaScript externo -->
+    <script src="app.js.JS"></script>
+</body>
+
+</html>

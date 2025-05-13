@@ -1,0 +1,115 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to top, cornsilk, transparent),
+        url(https://img.freepik.com/vetores-gratis/fundo-minimo-desenhado-a-mao_23-2149010465.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333333;
+}
+
+.header {
+    background-color: darksalmon;
+    height: 70px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 20px;
+}
+
+h1 {
+    color: #0e3758;
+    margin: 10px;
+}
+
+.titulo-nova-nota label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    align-items: center;
+    text-align: center;
+}
+
+input[type="search"],
+input[type="text"],
+textarea {
+    border-radius: 10px;
+    text-align: center;
+    opacity: 0.7;
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    resize: none;
+    min-height: 150px;
+}
+
+.naor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.Nota {
+    background-color: rgba(186, 228, 186, 0.891);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 20px;
+    width: 150px;
+    height: 60px;
+    margin-top: 10px;
+}
+
+.adiciona {
+    background-color: rgba(186, 228, 186, 0.891);
+    width: 100px;
+    height: 30px;
+    border-color: rgba(167, 230, 167, 0.92);
+    cursor: pointer;
+}
+
+.botao-apagar {
+    background-color: #ff7b7b;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 8px;
+    margin-left: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+}
+
+.apagar-tudo {
+    background-color: #ff4d4d;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+.campo-pesquisa {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.botao-limpar {
+    background-color: #ff7b7b;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+}
