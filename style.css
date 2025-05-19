@@ -8,40 +8,39 @@ body {
 
 .header {
     background-color: #1d1dbb;
-    height: 70px;
+    height: 10vh; /* Altura em porcentagem */
     display: flex;
     align-items: center;
     border-radius: 15px;
-    margin-top: 10px;
+    margin-top: 2vh; /* Margem em porcentagem */
     text-align: left;
 }
 
 h1 {
     color: #ffffff;
-    margin: 10px;
+    margin: 2vh; /* Margem em porcentagem */
 }
 
 .container {
     display: flex;
     justify-content: space-between;
-    padding: 30px;
-    gap: 20px;
+    padding: 5%; /* Padding em porcentagem */
+    gap: 2%; /* Gap em porcentagem */
 }
 
 .pesquisa-notas {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    width: 45%;
+    width: 45%; /* Largura em porcentagem */
 }
 
 .pesquisa-notas input[type="search"] {
     border-radius: 10px;
     border: 2px solid #1d1dbb;
-    width: 100%;
-    max-width: 300px;
-    padding: 10px;
-    margin-bottom: 15px;
+    width: 100%; /* Largura em porcentagem */
+    padding: 2%; /* Padding em porcentagem */
+    margin-bottom: 2%; /* Margem em porcentagem */
     font-size: 14px;
 }
 
@@ -49,27 +48,26 @@ h1 {
     list-style: none;
     padding: 0;
     margin: 0;
-    width: 100%;
-    max-width: 300px;
+    width: 100%; /* Largura em porcentagem */
 }
 
 .pesquisa-notas li {
     background-color: #e6f0ff;
     border: 1px solid #1d1dbb;
     border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 8px;
+    padding: 2%; /* Padding em porcentagem */
+    margin-bottom: 2%; /* Margem em porcentagem */
 }
 
 .nova-nota {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 50%;
+    width: 50%; /* Largura em porcentagem */
 }
 
 .nova-nota label {
-    margin-bottom: 5px;
+    margin-bottom: 2%; /* Margem em porcentagem */
     font-size: 16px;
 }
 
@@ -77,27 +75,26 @@ h1 {
 .nova-nota textarea {
     border-radius: 10px;
     border: 2px solid #1d1dbb;
-    width: 100%;
-    max-width: 400px;
-    padding: 10px;
-    margin-bottom: 12px;
+    width: 100%; /* Largura em porcentagem */
+    padding: 2%; /* Padding em porcentagem */
+    margin-bottom: 2%; /* Margem em porcentagem */
     font-size: 14px;
 }
 
 .nova-nota textarea {
     resize: none;
-    min-height: 150px;
+    min-height: 30vh; /* Altura em porcentagem */
 }
 
 .adiciona {
     background-color: #1d1dbb;
     color: white;
-    width: 130px;
-    height: 38px;
+    width: 30%; /* Largura em porcentagem */
+    height: 5vh; /* Altura em porcentagem */
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    margin-bottom: 10px;
+    margin-bottom: 2%; /* Margem em porcentagem */
     font-weight: bold;
 }
 
@@ -105,7 +102,7 @@ h1 {
     background-color: #1d1dbb;
     border: none;
     border-radius: 8px;
-    padding: 10px 20px;
+    padding: 2%; /* Padding em porcentagem */
     cursor: pointer;
     color: white;
     font-weight: bold;
@@ -115,8 +112,8 @@ h1 {
     background-color: #1d1dbb;
     border: none;
     border-radius: 5px;
-    padding: 5px 8px;
-    margin-left: 10px;
+    padding: 2%; /* Padding em porcentagem */
+    margin-left: 2%; /* Margem em porcentagem */
     cursor: pointer;
     color: white;
     font-size: 14px;
