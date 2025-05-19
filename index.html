@@ -15,39 +15,27 @@
         <h1 id="boas-vindas">Seja bem vindo!</h1>
     </div>
 
-    <div class="naor">
+    <div class="container">
 
-        <div class="Nota">
-            <h2>Notas</h2>
-        </div>
-
-        <div class="campo-pesquisa">
-            <input type="search" id="pesquisa-nota" placeholder="Pesquise uma nota 🔍" oninput="filtrarNotas()">
-            <button class="botao-limpar" onclick="limparPesquisa()">❌</button>
-        </div>
-
-        <div class="titulo-nova-nota">
+        <!-- Campo de título e nota no canto superior esquerdo -->
+        <div class="nova-nota">
             <label for="nota-nome">Título da Nota:</label>
             <input type="text" id="nota-nome" placeholder="Digite o título da nota">
-        </div>
-
-        <div>
-            <textarea name="addnota" id="notad" placeholder="Escreva sua Nota"></textarea>
+            <textarea id="notad" placeholder="Escreva sua Nota"></textarea>
             <button class="adiciona" onclick="addnotas()">Adicionar</button>
+            <button class="apagar-tudo" onclick="apagarTodasNotas()">🗑️ Apagar todas as notas</button>
         </div>
 
-        <div>
-            <h2>Minhas notas</h2>
-            <ul id="notas">
-                <!-- Notas aparecem aqui -->
-            </ul>
-            <button class="apagar-tudo" onclick="apagarTodasNotas()">🗑️ Apagar todas as notas</button>
+        <!-- Campo de pesquisa e lista de notas no canto superior direito -->
+        <div class="pesquisa-notas">
+            <input type="search" id="pesquisa-nota" placeholder="Pesquise uma nota 🔍" oninput="filtrarNotas()">
+            <ul id="notas"></ul>
         </div>
 
     </div>
 
-    <!-- Ligando o arquivo JavaScript externo -->
     <script src="app.js.JS"></script>
 </body>
 
 </html>
+
