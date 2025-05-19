@@ -1,114 +1,122 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to top, cornsilk, transparent),
-        url(https://img.freepik.com/vetores-gratis/fundo-minimo-desenhado-a-mao_23-2149010465.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: #ffffff;
     color: #333333;
+    margin: 0;
+    padding: 0;
 }
 
 .header {
-    background-color: darksalmon;
+    background-color: #1d1dbb;
     height: 70px;
-    width: 400px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin: auto;
-    border-radius: 20px;
+    border-radius: 15px;
+    margin-top: 10px;
+    text-align: left;
 }
 
 h1 {
-    color: #0e3758;
+    color: #ffffff;
     margin: 10px;
 }
 
-.titulo-nova-nota label {
-    display: block;
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    gap: 20px;
+}
+
+.pesquisa-notas {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 45%;
+}
+
+.pesquisa-notas input[type="search"] {
+    border-radius: 10px;
+    border: 2px solid #1d1dbb;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.pesquisa-notas ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 300px;
+}
+
+.pesquisa-notas li {
+    background-color: #e6f0ff;
+    border: 1px solid #1d1dbb;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 8px;
+}
+
+.nova-nota {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+}
+
+.nova-nota label {
     margin-bottom: 5px;
     font-size: 16px;
-    align-items: center;
-    text-align: center;
 }
 
-input[type="search"],
-input[type="text"],
-textarea {
+.nova-nota input[type="text"],
+.nova-nota textarea {
     border-radius: 10px;
-    text-align: center;
-    opacity: 0.7;
+    border: 2px solid #1d1dbb;
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    font-size: 14px;
 }
 
-textarea {
+.nova-nota textarea {
     resize: none;
     min-height: 150px;
 }
 
-.naor {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.Nota {
-    background-color: rgba(186, 228, 186, 0.891);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    border-radius: 20px;
-    width: 150px;
-    height: 60px;
-    margin-top: 10px;
-}
-
 .adiciona {
-    background-color: rgba(186, 228, 186, 0.891);
-    width: 100px;
-    height: 30px;
-    border-color: rgba(167, 230, 167, 0.92);
-    cursor: pointer;
-}
-
-.botao-apagar {
-    background-color: #ff7b7b;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 8px;
-    margin-left: 10px;
-    cursor: pointer;
+    background-color: #1d1dbb;
     color: white;
-    font-size: 14px;
+    width: 130px;
+    height: 38px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .apagar-tudo {
-    background-color: #ff4d4d;
+    background-color: #1d1dbb;
     border: none;
     border-radius: 8px;
     padding: 10px 20px;
-    margin-top: 10px;
     cursor: pointer;
     color: white;
     font-weight: bold;
 }
 
-.campo-pesquisa {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    margin-bottom: 10px;
-}
-
-.botao-limpar {
-    background-color: #ff7b7b;
+.botao-apagar {
+    background-color: #1d1dbb;
     border: none;
     border-radius: 5px;
-    padding: 8px 12px;
+    padding: 5px 8px;
+    margin-left: 10px;
     cursor: pointer;
     color: white;
     font-size: 14px;
